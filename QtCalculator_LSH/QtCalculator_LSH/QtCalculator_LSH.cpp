@@ -5,7 +5,7 @@
 QtCalculator_LSH::QtCalculator_LSH(QWidget *parent)
     : QMainWindow(parent)
 {
-    ui.setupUi(this);
+    ui.setupUi(this);//just test.
 
     connect(ui.pushButton_00, &QPushButton::clicked, this, &QtCalculator_LSH::setButton_0);
     connect(ui.pushButton_01, &QPushButton::clicked, this, &QtCalculator_LSH::setButton_1);
