@@ -6,7 +6,7 @@
 class QtCalculator_LSH : public QMainWindow
 {
     Q_OBJECT
-
+        //asdf
 public:
     QtCalculator_LSH(QWidget *parent = Q_NULLPTR);
 
