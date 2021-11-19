@@ -26,6 +26,8 @@ QtCalculator_LSH::QtCalculator_LSH(QWidget *parent)
     connect(ui.pushButton_close, &QPushButton::clicked, this, &QtCalculator_LSH::setButton_close);
     connect(ui.pushButton_clear, &QPushButton::clicked, this, &QtCalculator_LSH::setButton_clear);
     connect(ui.pushButton_result, &QPushButton::clicked, this, &QtCalculator_LSH::setButton_result);
+
+    //Now, I'm going to fix my code
 }
 
 void QtCalculator_LSH::setPPlus(QString str)
