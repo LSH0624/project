@@ -75,7 +75,7 @@
      <bool>false</bool>
     </property>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>50</x>
@@ -108,6 +108,12 @@
          <height>78</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <family>휴먼아미체</family>
+         <pointsize>20</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>8</string>
        </property>
@@ -121,8 +127,20 @@
          <height>78</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <family>휴먼아미체</family>
+         <pointsize>20</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>9</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
        </property>
       </widget>
      </item>
@@ -152,6 +170,11 @@
          <height>0</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <family>휴먼모음T</family>
+        </font>
+       </property>
        <property name="cursor">
         <cursorShape>ArrowCursor</cursorShape>
        </property>
@@ -171,6 +194,12 @@
          <height>78</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <family>휴먼아미체</family>
+         <pointsize>20</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>4</string>
        </property>
@@ -183,6 +212,11 @@
          <width>78</width>
          <height>78</height>
         </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>휴먼모음T</family>
+        </font>
        </property>
        <property name="text">
         <string>+</string>
@@ -231,6 +265,12 @@
          <height>50</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <family>휴먼아미체</family>
+         <pointsize>20</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>6</string>
        </property>
@@ -250,6 +290,11 @@
          <height>16777215</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <family>휴먼모음T</family>
+        </font>
+       </property>
        <property name="text">
         <string>*</string>
        </property>
@@ -262,6 +307,12 @@
          <width>78</width>
          <height>78</height>
         </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>휴먼아미체</family>
+         <pointsize>20</pointsize>
+        </font>
        </property>
        <property name="text">
         <string>3</string>
@@ -276,6 +327,11 @@
          <height>78</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <family>휴먼모음T</family>
+        </font>
+       </property>
        <property name="text">
         <string>-</string>
        </property>
@@ -288,6 +344,12 @@
          <width>78</width>
          <height>78</height>
         </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>휴먼아미체</family>
+         <pointsize>20</pointsize>
+        </font>
        </property>
        <property name="text">
         <string>0</string>
@@ -302,6 +364,12 @@
          <height>78</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <family>휴먼아미체</family>
+         <pointsize>20</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>^</string>
        </property>
@@ -314,6 +382,12 @@
          <width>78</width>
          <height>78</height>
         </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>휴먼아미체</family>
+         <pointsize>20</pointsize>
+        </font>
        </property>
        <property name="text">
         <string>1</string>
@@ -350,6 +424,12 @@
          <height>78</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <family>휴먼아미체</family>
+         <pointsize>20</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>2</string>
        </property>
@@ -363,6 +443,12 @@
          <height>78</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <family>휴먼아미체</family>
+         <pointsize>20</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>5</string>
        </property>
@@ -375,6 +461,12 @@
          <width>78</width>
          <height>78</height>
         </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>휴먼모음T</family>
+         <pointsize>20</pointsize>
+        </font>
        </property>
        <property name="text">
         <string>=</string>
@@ -394,6 +486,12 @@
          <width>90</width>
          <height>90</height>
         </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>휴먼아미체</family>
+         <pointsize>20</pointsize>
+        </font>
        </property>
        <property name="text">
         <string>7</string>
