@@ -26,84 +26,116 @@ QtCalculator_LSH::QtCalculator_LSH(QWidget *parent)
     connect(ui.pushButton_close, &QPushButton::clicked, this, &QtCalculator_LSH::setButton_close);
     connect(ui.pushButton_clear, &QPushButton::clicked, this, &QtCalculator_LSH::setButton_clear);
     connect(ui.pushButton_result, &QPushButton::clicked, this, &QtCalculator_LSH::setButton_result);
+    connect(ui.pushButton_Back, &QPushButton::clicked, this, &QtCalculator_LSH::setButton_BS);
 
     //Now, I'm going to fix my code
 }
 
-void QtCalculator_LSH::setPPlus(QString str)
+void QtCalculator_LSH::setButton_BS()
 {
-    auto allstr = ui.lineEdit->text();
-    allstr += str;
-    ui.lineEdit->setText(allstr);
+    if (current_input.length() > 1) {
+        current_input.resize(current_input.length() - 1);
+        ui.lineEdit->setText(current_input);
+    }
+    else {
+        current_input = "";
+        ui.lineEdit->setText("");
+    }
 }
+
+
+void QtCalculator_LSH::setAppend(QString str)
+{  
+    auto strStack = ui.lineEdit->text();
+    strStack += str;
+    ui.lineEdit->setText(strStack);
+}
+
 void QtCalculator_LSH::setButton_0()
 {
-    setPPlus("0");
+    setAppend("0");
 }
+
 void QtCalculator_LSH::setButton_1()
 {
-    setPPlus("1");
+    setAppend("1");
 }
+
 void QtCalculator_LSH::setButton_2()
 {
-    setPPlus("2");
+    setAppend("2");
 }
+
 void QtCalculator_LSH::setButton_3()
 {
-    setPPlus("3");
+    setAppend("3");
 }
+
 void QtCalculator_LSH::setButton_4()
 {
-    setPPlus("4");
+    setAppend("4");
 }
+
 void QtCalculator_LSH::setButton_5()
 {
-    setPPlus("5");
+    setAppend("5");
 }
+
 void QtCalculator_LSH::setButton_6()
 {
-    setPPlus("6");
+    setAppend("6");
 }
+
 void QtCalculator_LSH::setButton_7()
 {
-    setPPlus("7");
+    setAppend("7");
 }
+
 void QtCalculator_LSH::setButton_8()
 {
-    setPPlus("8");
+    setAppend("8");
 }
+
 void QtCalculator_LSH::setButton_9()
 {
-    setPPlus("9");
+    setAppend("9");
 }
+
 void QtCalculator_LSH::setButton_plus()
 {
-    setPPlus("+");
+    setAppend("+");
 }
+
 void QtCalculator_LSH::setButton_minus()
 {
-    setPPlus("-");
+    setAppend("-");
 }
+
 void QtCalculator_LSH::setButton_divide()
 {
-    setPPlus("/");
+    setAppend("/");
 }
+
 void QtCalculator_LSH::setButton_multi()
 {
-    setPPlus("*");
+    setAppend("*");
 }
+
 void QtCalculator_LSH::setButton_RtP()
 {
-    setPPlus("**");
+    setAppend("**");
 }
+
 void QtCalculator_LSH::setButton_close()
 {
     this->close();
 }
+
 void QtCalculator_LSH::setButton_clear()
 {
     ui.lineEdit->setText("");
 }
+
 void QtCalculator_LSH::setButton_result()
 {
     auto strExpr = ui.lineEdit->text();

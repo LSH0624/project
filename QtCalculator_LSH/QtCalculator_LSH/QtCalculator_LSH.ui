@@ -2,47 +2,112 @@
 <ui version="4.0">
  <class>QtCalculator_LSHClass</class>
  <widget class="QMainWindow" name="QtCalculator_LSHClass">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>792</width>
-    <height>598</height>
+    <width>600</width>
+    <height>600</height>
    </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>600</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>600</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::NoFocus</enum>
   </property>
   <property name="windowTitle">
    <string>QtCalculator_LSH</string>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>30</width>
+    <height>30</height>
+   </size>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Rounded</enum>
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QLineEdit" name="lineEdit">
     <property name="geometry">
      <rect>
-      <x>110</x>
-      <y>50</y>
+      <x>50</x>
+      <y>70</y>
       <width>491</width>
       <height>91</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>28</pointsize>
+     </font>
+    </property>
+    <property name="tabletTracking">
+     <bool>false</bool>
+    </property>
+    <property name="frame">
+     <bool>true</bool>
+    </property>
+    <property name="dragEnabled">
+     <bool>false</bool>
+    </property>
+    <property name="readOnly">
+     <bool>false</bool>
+    </property>
    </widget>
-   <widget class="QWidget" name="layoutWidget">
+   <widget class="QWidget" name="">
     <property name="geometry">
      <rect>
-      <x>111</x>
-      <y>171</y>
+      <x>50</x>
+      <y>170</y>
       <width>495</width>
-      <height>135</height>
+      <height>335</height>
      </rect>
     </property>
-    <layout class="QGridLayout" name="gridLayout">
-     <item row="0" column="0">
-      <widget class="QPushButton" name="pushButton_07">
-       <property name="text">
-        <string>7</string>
-       </property>
-      </widget>
-     </item>
+    <layout class="QGridLayout" name="gridLayout" rowstretch="0,0,0,0">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetNoConstraint</enum>
+     </property>
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="horizontalSpacing">
+      <number>7</number>
+     </property>
      <item row="0" column="1">
       <widget class="QPushButton" name="pushButton_08">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>78</width>
+         <height>78</height>
+        </size>
+       </property>
        <property name="text">
         <string>8</string>
        </property>
@@ -50,6 +115,12 @@
      </item>
      <item row="0" column="2">
       <widget class="QPushButton" name="pushButton_09">
+       <property name="minimumSize">
+        <size>
+         <width>78</width>
+         <height>78</height>
+        </size>
+       </property>
        <property name="text">
         <string>9</string>
        </property>
@@ -57,34 +128,109 @@
      </item>
      <item row="0" column="3">
       <widget class="QPushButton" name="pushButton_divide">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>78</width>
+         <height>78</height>
+        </size>
+       </property>
+       <property name="sizeIncrement">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="baseSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="cursor">
+        <cursorShape>ArrowCursor</cursorShape>
+       </property>
+       <property name="contextMenuPolicy">
+        <enum>Qt::NoContextMenu</enum>
+       </property>
        <property name="text">
         <string>/</string>
        </property>
       </widget>
      </item>
-     <item row="0" column="4">
-      <widget class="QPushButton" name="pushButton_clear">
-       <property name="text">
-        <string>clear</string>
-       </property>
-      </widget>
-     </item>
      <item row="1" column="0">
       <widget class="QPushButton" name="pushButton_04">
+       <property name="minimumSize">
+        <size>
+         <width>78</width>
+         <height>78</height>
+        </size>
+       </property>
        <property name="text">
         <string>4</string>
        </property>
       </widget>
      </item>
-     <item row="1" column="1">
-      <widget class="QPushButton" name="pushButton_05">
+     <item row="3" column="3">
+      <widget class="QPushButton" name="pushButton_plus">
+       <property name="minimumSize">
+        <size>
+         <width>78</width>
+         <height>78</height>
+        </size>
+       </property>
        <property name="text">
-        <string>5</string>
+        <string>+</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="4">
+      <widget class="QPushButton" name="pushButton_close">
+       <property name="minimumSize">
+        <size>
+         <width>78</width>
+         <height>78</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>close</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
        </property>
       </widget>
      </item>
      <item row="1" column="2">
       <widget class="QPushButton" name="pushButton_06">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>78</width>
+         <height>78</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="baseSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
        <property name="text">
         <string>6</string>
        </property>
@@ -92,34 +238,31 @@
      </item>
      <item row="1" column="3">
       <widget class="QPushButton" name="pushButton_multi">
+       <property name="minimumSize">
+        <size>
+         <width>78</width>
+         <height>78</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
        <property name="text">
         <string>*</string>
        </property>
       </widget>
      </item>
-     <item row="1" column="4">
-      <widget class="QPushButton" name="pushButton_close">
-       <property name="text">
-        <string>close</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="0">
-      <widget class="QPushButton" name="pushButton_01">
-       <property name="text">
-        <string>1</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="1">
-      <widget class="QPushButton" name="pushButton_02">
-       <property name="text">
-        <string>2</string>
-       </property>
-      </widget>
-     </item>
      <item row="2" column="2">
       <widget class="QPushButton" name="pushButton_03">
+       <property name="minimumSize">
+        <size>
+         <width>78</width>
+         <height>78</height>
+        </size>
+       </property>
        <property name="text">
         <string>3</string>
        </property>
@@ -127,6 +270,12 @@
      </item>
      <item row="2" column="3">
       <widget class="QPushButton" name="pushButton_minus">
+       <property name="minimumSize">
+        <size>
+         <width>78</width>
+         <height>78</height>
+        </size>
+       </property>
        <property name="text">
         <string>-</string>
        </property>
@@ -134,29 +283,133 @@
      </item>
      <item row="3" column="0">
       <widget class="QPushButton" name="pushButton_00">
+       <property name="minimumSize">
+        <size>
+         <width>78</width>
+         <height>78</height>
+        </size>
+       </property>
        <property name="text">
         <string>0</string>
        </property>
       </widget>
      </item>
+     <item row="3" column="1">
+      <widget class="QPushButton" name="pushButton_RtP">
+       <property name="minimumSize">
+        <size>
+         <width>78</width>
+         <height>78</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>^</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QPushButton" name="pushButton_01">
+       <property name="minimumSize">
+        <size>
+         <width>78</width>
+         <height>78</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="4">
+      <widget class="QPushButton" name="pushButton_clear">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777214</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>clear</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QPushButton" name="pushButton_02">
+       <property name="minimumSize">
+        <size>
+         <width>78</width>
+         <height>78</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>2</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QPushButton" name="pushButton_05">
+       <property name="minimumSize">
+        <size>
+         <width>78</width>
+         <height>78</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>5</string>
+       </property>
+      </widget>
+     </item>
      <item row="3" column="2">
       <widget class="QPushButton" name="pushButton_result">
+       <property name="minimumSize">
+        <size>
+         <width>78</width>
+         <height>78</height>
+        </size>
+       </property>
        <property name="text">
         <string>=</string>
        </property>
       </widget>
      </item>
-     <item row="3" column="3">
-      <widget class="QPushButton" name="pushButton_plus">
+     <item row="0" column="0">
+      <widget class="QPushButton" name="pushButton_07">
+       <property name="minimumSize">
+        <size>
+         <width>78</width>
+         <height>78</height>
+        </size>
+       </property>
+       <property name="sizeIncrement">
+        <size>
+         <width>90</width>
+         <height>90</height>
+        </size>
+       </property>
        <property name="text">
-        <string>+</string>
+        <string>7</string>
        </property>
       </widget>
      </item>
-     <item row="3" column="1">
-      <widget class="QPushButton" name="pushButton_RtP">
+     <item row="2" column="4">
+      <widget class="QPushButton" name="pushButton_Back">
+       <property name="minimumSize">
+        <size>
+         <width>78</width>
+         <height>78</height>
+        </size>
+       </property>
        <property name="text">
-        <string>^</string>
+        <string>BackSpace</string>
        </property>
       </widget>
      </item>
@@ -168,7 +421,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>792</width>
+     <width>600</width>
      <height>26</height>
     </rect>
    </property>

@@ -29,9 +29,12 @@ public:
     void setButton_close();
     void setButton_result();
     void setButton_RtP();
+    void setButton_BS();
 
-    void setPPlus(QString str);
+    void setAppend(QString str);
 
 private:
     Ui::QtCalculator_LSHClass ui;
+
+    QString current_input;
 };
