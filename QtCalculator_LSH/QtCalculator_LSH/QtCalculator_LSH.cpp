@@ -33,16 +33,10 @@ QtCalculator_LSH::QtCalculator_LSH(QWidget *parent)
 
 void QtCalculator_LSH::setButton_BS()
 {
-    if (current_input.length() > 1) {
-        current_input.resize(current_input.length() - 1);
-        ui.lineEdit->setText(current_input);
-    }
-    else {
-        current_input = "";
-        ui.lineEdit->setText("");
-    }
+    QString filename(ui.lineEdit->text());
+    auto name = ui.lineEdit->text().chopped(1);
+    ui.lineEdit->setText(name);
 }
-
 
 void QtCalculator_LSH::setAppend(QString str)
 {  
