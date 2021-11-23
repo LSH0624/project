@@ -5,7 +5,7 @@
 QtCalculator_LSH::QtCalculator_LSH(QWidget *parent)
     : QMainWindow(parent)
 {
-    ui.setupUi(this);//just test.
+    ui.setupUi(this);
 
     connect(ui.pushButton_00, &QPushButton::clicked, this, &QtCalculator_LSH::setButton_0);
     connect(ui.pushButton_01, &QPushButton::clicked, this, &QtCalculator_LSH::setButton_1);
@@ -28,21 +28,21 @@ QtCalculator_LSH::QtCalculator_LSH(QWidget *parent)
     connect(ui.pushButton_result, &QPushButton::clicked, this, &QtCalculator_LSH::setButton_result);
     connect(ui.pushButton_Back, &QPushButton::clicked, this, &QtCalculator_LSH::setButton_BS);
 
-    //Now, I'm going to fix my code
-}
+    //ui에 세팅된 버튼을 클릭했을 때 원하는 기능과 연결
+    }
 
-void QtCalculator_LSH::setButton_BS()
+void QtCalculator_LSH::setButton_BS() //ui내 Backspace 기능
 {
     QString filename(ui.lineEdit->text());
     auto name = ui.lineEdit->text().chopped(1);
     ui.lineEdit->setText(name);
 }
 
-void QtCalculator_LSH::setAppend(QString str)
-{  
-    auto strStack = ui.lineEdit->text();
-    strStack += str;
-    ui.lineEdit->setText(strStack);
+void QtCalculator_LSH::setAppend(QString str) //ui보드에 누른 키를 누적시키는 함수
+{
+        auto strStack = ui.lineEdit->text();
+        strStack += str;
+        ui.lineEdit->setText(strStack);    
 }
 
 void QtCalculator_LSH::setButton_0()
@@ -130,10 +130,11 @@ void QtCalculator_LSH::setButton_clear()
     ui.lineEdit->setText("");
 }
 
-void QtCalculator_LSH::setButton_result()
+void QtCalculator_LSH::setButton_result() // 최종 결과 함수. =. 헤더파일에 들어있는 calculator와 연결하고, 그 결과값을 읽어 lineEdit에 표시
 {
     auto strExpr = ui.lineEdit->text();
     auto stdExpr = strExpr.toStdString();
     auto nResult = calculator::eval(stdExpr);
     ui.lineEdit->setText(QString::number(nResult));
-}
+} 
+//결과창이 나온 후, 사칙연산을 누르면 누적해서 계산 지속, 숫자를 누르면 새롭게 입력->이걸 어떻게 구현?
