@@ -73,7 +73,7 @@ void QtCalculator_LSH::setAppend(QString strButton)  //strButton을 눌렀을 때 입�
         
         ui.linePutInNum->setText(strInput); //아래에 strInput을 출력
     }
-    else if (strButton == "+" || strButton == "-" || strButton == "*" || strButton == "/" ) 
+    else if (strButton == "+" || strButton == "-" || strButton == "*" || strButton == "/" || strButton == "**")
     {
         strStack += (strInput + strButton); //연산기호 누르면 strInput에 있는게 strButton과 함께 Stack으로 올라가게 됨.
 
