@@ -8,9 +8,12 @@ IF %1 == Release goto RELEASE
 
 :DEBUG
 set Config=Debug
+goto END
 
 :RELEASE
 set Config=Release
+goto END
 
-echo %2\bin\windeployqt.exe .\x64\%Config%\
-%2\bin\windeployqt.exe .\x64\%Config%\
+:END
+echo %2\bin\windeployqt.exe ..\Bin\%Config%
+%2\bin\windeployqt.exe ..\Bin\%Config%

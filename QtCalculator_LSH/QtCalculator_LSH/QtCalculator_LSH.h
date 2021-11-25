@@ -31,10 +31,12 @@ public:
     void setButton_RtP();
     void setButton_BS();
 
-    void setAppend(QString str);
-
+    void QtCalculator_LSH::closeEvent(QCloseEvent* event);
+    
+    void setAppend(QString str);   
+       
 private:
-    Ui::QtCalculator_LSHClass ui;
+    Ui::QtCalculator_LSHClass ui;        
 
-    QString current_input;
+
 };
