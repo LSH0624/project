@@ -203,7 +203,7 @@ void QtCalculator_LSH::setButton_close() //close가 모두 막혔기에 exit으로 버튼 �
     exit(EXIT_FAILURE);        
 }
 
-void QtCalculator_LSH::setButton_clear()
+void QtCalculator_LSH::setButton_clear() //linePutInNum과 lineStack을 초기화
 {
     ui.linePutInNum->setText("");
     ui.lineStack->setText("");
