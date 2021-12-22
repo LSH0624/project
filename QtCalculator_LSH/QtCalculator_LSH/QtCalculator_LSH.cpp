@@ -11,7 +11,7 @@ QtCalculator_LSH::QtCalculator_LSH(QWidget *parent)
 
     setWindowFlags(Qt::Window | Qt::WindowMaximizeButtonHint); // 상부 x버튼 제거
     //setWindowFlags(windowFlags() & (~Qt::WindowMinimizeButtonHint)); //상부 minimize 버튼 제거   
-
+    //소스트리 확인하기
     QWidget::grabKeyboard(); //키보드 입력 제거
 
     connect(ui.pushButton_00, &QPushButton::clicked, this, &QtCalculator_LSH::setButton_0);
