@@ -19,6 +19,8 @@ QtCalculator_LSH::QtCalculator_LSH(QWidget *parent)
 
     //merging these files success.
 
+    //
+
     QWidget::grabKeyboard(); //키보드 입력 제거
 
     connect(ui.pushButton_00, &QPushButton::clicked, this, &QtCalculator_LSH::setButton_0);
