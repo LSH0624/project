@@ -11,7 +11,14 @@ QtCalculator_LSH::QtCalculator_LSH(QWidget *parent)
     //소스트리 확인하려고 작업중인것을 설정해보았다. -> main branch
     setWindowFlags(Qt::Window | Qt::WindowMaximizeButtonHint); // 상부 x버튼 제거
     //setWindowFlags(windowFlags() & (~Qt::WindowMinimizeButtonHint)); //상부 minimize 버튼 제거   
+
     //소스트리 확인하기 -> test branch
+
+    //소스트리 확인하기
+    //211223 branch test
+
+    //merging these files success.
+
     QWidget::grabKeyboard(); //키보드 입력 제거
 
     connect(ui.pushButton_00, &QPushButton::clicked, this, &QtCalculator_LSH::setButton_0);
